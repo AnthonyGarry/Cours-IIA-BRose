@@ -1,0 +1,16 @@
+@startuml M6_TP2
+
+class Utilisateur {
+    Nom
+    Poste
+}
+
+class PosteDeTravail {
+    AdresseIP
+    MasqueReseau
+    PasserelleParDefaut
+}
+
+Utilisateur -> PosteDeTravail
+
+@enduml

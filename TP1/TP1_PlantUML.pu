@@ -1,0 +1,39 @@
+@startUML M6_TP1
+
+class PaquetIP {
+    Version
+    TrafficClass
+    FlowLabel
+    PayloadLength
+    NextHeader
+    HopLimit
+    SourceAddress
+    DestinationAddress
+}
+
+package Switchs {
+
+    class SwitchL2 {
+        Nom
+        Niveau
+        NombreDePorts
+        TableDAdresse
+        {Abstract} Adressage()
+    }
+
+    class SwitchL3 {
+        Nom
+        Niveau
+        NombreDePorts
+        TableDAdresse
+        {Abstract} Adressage()
+    }
+
+    SwitchL2 --o SwitchL3
+    SwitchL2 o-- SwitchL3
+
+}
+
+PaquetIP --> Switchs
+
+@enduml

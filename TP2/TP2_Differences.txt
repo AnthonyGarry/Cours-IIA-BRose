@@ -1,0 +1,25 @@
+Différences:
+
+    Python:
+        - On définit une classe en écrivant "class NomDeClasse:"
+
+        - Besoin de 'self' pour accéder aux attributs de la classe (ex: Pour obtenir le 'nom' de la classe 'Personne', on aura besoin de faire 'Personne(self.nom)')
+
+        - Il n'est pas obligatoire de spécifier les types des variables de la classe
+
+        - Il n'y a pas de moyen "en dur" de contrôler les accès aux variables de la classe, seulement des conventions (exemple: mettre un tiret du bas devant un nom de variable "privée" comme '_NuméroSécuritéSociale')
+
+
+
+    C++:
+        - On définit une classe en écrivant "class NomDeClasse {}"
+
+        - On peux directement appeler les attributs de la classe
+
+        - Il est obligatoire de spécifier les types des varaibles de la classe
+
+        - Il est possible de restreindre "en dur" les accès aux variables de la classe en utilisant, par exemple, 'private' qui indiquera au système d'exploitation qu'il faut bloquer les accès non autorisés aux variables.
+
+
+
+Je n'ai pas vu une "réelle" différence entre les constructeurs, héritages et polymorphismes Python/C++ : Les deux utilisent des syntaxes différentes mais faisant la même chose, ce qui est une différence attendue entre deux langages de programmation.
